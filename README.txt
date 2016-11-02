@@ -1,3 +1,16 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/mmkepler/pen/mrZqPM.
+#Simon
+This is my entry for Free Code Camp Simon project. It is not finished yet...
 
- 
+###Built With
++  HTML  
++  CSS  
++  Javascript  
++  Jquery
++  Bootstrap
+
+###Author
++  Melissa Kepler a.k.a. Missarachid  
+
+###Acknowledgements
++  Free Code Camp
++  Milton Bradley
