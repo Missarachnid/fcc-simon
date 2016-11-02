@@ -6,7 +6,7 @@ This is my entry for Free Code Camp Simon project. It is not finished yet...
 +  CSS  
 +  Javascript  
 +  Jquery
-+  Bootstrap
++  Bootstrap  
 
 ###Author
 +  Melissa Kepler a.k.a. Missarachid  
