@@ -57,26 +57,33 @@ div.col-xs-2 {
 
 #yellow, #blue {
   position: relative;
-  z-index: 5;
+  z-index: 20;
 }
 
 #green, #red {
   position: relative;
-  z-index: 5;
+  z-index: 20;
 }
 
 #lightGreen, #lightRed, #lightYellow, #lightBlue {
   position: relative;
   z-index: 2;
-  top: -314px;
+  top: -315px;
 }
+
+#lightGreen {
+  transform: scaley(-1);
+}
+
+
 .btn[disabled] {
   opacity: 1;
 }
 
-.square:focus, .square:active, .square:focus:active, .btn:focus, .btn:active, .btn:focus:active {
+.dis:focus, .dis:active, .dis:focus:active, .btn:focus, .btn:active, .btn:focus:active {
   background-image: none;
   outline: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
