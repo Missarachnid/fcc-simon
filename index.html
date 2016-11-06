@@ -8,108 +8,105 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-
   <body>
-  <div class="holder">
-    <div class="inside">
-      <div class="container">
-        <div class="topColors">
-          <div class="row">
-            <div class="col-xs-5 square">
-              <input type="image" id="green" src="https://crossorigin.me/http://www.mmkepler.com/other/green.png" class="square"/>
+    <div class="holder">
+      <div class="inside">
+        <div class="container">
+          <div class="topColors">
+            <div class="row">
+              <div class="col-xs-5 square">
+                <input type="image" id="green" src="https://crossorigin.me/http://www.mmkepler.com/other/green.svg" class="dis" disabled/>
 
-              <img src="https://crossorigin.me/http://www.mmkepler.com/other/lightgreen.png" id="lightGreen">
-            </div>
-            <div class="col-xs-2 square spacer"></div>
-            <div class="col-xs-5 square">
+                <img src="https://crossorigin.me/http://www.mmkepler.com/other/lightgreen.svg" id="lightGreen">
+              </div>
+              <div class="col-xs-2 square spacer"></div>
+              <div class="col-xs-5 square">
 
-              <input type="image" src="https://crossorigin.me/http://www.mmkepler.com/other/red.png" id="red" class="square"/>
-              <img src="https://crossorigin.me/http://www.mmkepler.com/other/lightred.png" id="lightRed">
-            </div>
-          </div>
-        </div>
-
-
-        <div class="bottomColors">
-          <div class="row">
-            <div class="col-xs-5 yellow">
-              <input type="image" src="https://crossorigin.me/http://www.mmkepler.com/other/yellow.png" id="yellow" class="square"/>
-              <img src="https://crossorigin.me/http://www.mmkepler.com/other/lightyellow.png" id="lightYellow">
-            </div>
-            <div class="col-xs-2 square spacer"></div>
-            <div class="col-xs-5">
-              <input type="image" src="https://crossorigin.me/http://www.mmkepler.com/other/blue.png" id="blue" class="square"/>
-              <img src="https://crossorigin.me/http://www.mmkepler.com/other/lightblue.png" id="lightBlue">
-            </div>
-          </div>
-        </div>
-
-        <div id="allCenterItems">
-
-          <div class="row front">
-            <div class="col-xs-3"></div>
-            <div class="col-xs-2 info">
-              <div class="screen">
-                <p id="score"></p>
+                <input type="image" src="https://crossorigin.me/http://www.mmkepler.com/other/red.svg" id="red" class="dis" disabled/>
+                <img src="https://crossorigin.me/http://www.mmkepler.com/other/lightred.svg" id="lightRed">
               </div>
             </div>
-            <div class="col-xs-2 info">
-              <button id="start" class="btn choice dis" disabled></button>
-            </div>
-            <div class="col-xs-2 info">
-              <div class="light"></div>
-              <button id="strict" class="btn choice dis" disabled></button>
-            </div>
-            <div class="col-xs-3"></div>
           </div>
 
 
-          <div class="row front">
-            <div class="col-xs-3"></div>
-            <div class="col-xs-2 titles">
-              <h5>Level</h5>
-            </div>
-            <div class="col-xs-2 titles">
-              <h5>Start</h5>
-            </div>
-            <div class="col-xs-2 titles">
-              <h5>Strict</h5>
-            </div>
-            <div class="col-xs-3"></div>
-          </div>
-
-
-          <div class="row front">
-            <div class="col-xs-3"></div>
-            <div class="col-xs-6">
-
-              <div>
-                <h5 class="switchHold">Off </h5>
-                <label class="switch">Off
-  									<input type="checkbox" id="onOff">
-  										<div class="slider"></div>
-                  On
-                </label>
-                <h5 class="switchHold"> On</h5>
+          <div class="bottomColors">
+            <div class="row">
+              <div class="col-xs-5 yellow">
+                <input type="image" src="https://crossorigin.me/http://www.mmkepler.com/other/yellow.svg" id="yellow" class="dis" disabled/>
+                <img src="https://crossorigin.me/http://www.mmkepler.com/other/lightyellow.svg" id="lightYellow">
               </div>
-
+              <div class="col-xs-2 square spacer"></div>
+              <div class="col-xs-5">
+                <input type="image" src="https://crossorigin.me/http://www.mmkepler.com/other/blue.svg" id="blue" class="dis" disabled/>
+                <img src="https://crossorigin.me/http://www.mmkepler.com/other/lightblue.svg" id="lightBlue">
+              </div>
             </div>
-            <div class="col-xs-3"></div>
           </div>
 
+          <div id="allCenterItems">
+
+            <div class="row front">
+              <div class="col-xs-3"></div>
+              <div class="col-xs-2 info">
+                <div class="screen">
+                  <p id="score"></p>
+                </div>
+              </div>
+              <div class="col-xs-2 info">
+                <button id="start" class="btn choice" disabled></button>
+              </div>
+              <div class="col-xs-2 info">
+                <div class="light"></div>
+                <button id="strict" class="btn choice" disabled></button>
+              </div>
+              <div class="col-xs-3"></div>
+            </div>
+
+
+            <div class="row front">
+              <div class="col-xs-3"></div>
+              <div class="col-xs-2 titles">
+                <h5>Level</h5>
+              </div>
+              <div class="col-xs-2 titles">
+                <h5>Start</h5>
+              </div>
+              <div class="col-xs-2 titles">
+                <h5>Strict</h5>
+              </div>
+              <div class="col-xs-3"></div>
+            </div>
+
+
+            <div class="row front">
+              <div class="col-xs-3"></div>
+              <div class="col-xs-6">
+
+                <div>
+                  <h5 class="switchHold">Off </h5>
+                  <label class="switch">Off
+                      <input type="checkbox" id="onOff">
+                        <div class="slider"></div>
+                    On
+                  </label>
+                  <h5 class="switchHold"> On</h5>
+                </div>
+
+              </div>
+              <div class="col-xs-3"></div>
+            </div>
+
+
+          </div>
 
         </div>
-
       </div>
     </div>
-  </div>
 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src="js/app.js"></script>
 
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
- <script src="js/app.js"></script>
-
-</body>
+  </body>
 </html>
