@@ -71,10 +71,6 @@ div.col-xs-2 {
   top: -315px;
 }
 
-#lightGreen {
-  transform: scaley(-1);
-}
-
 
 .btn[disabled] {
   opacity: 1;
