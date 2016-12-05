@@ -23,13 +23,13 @@ $(document).ready(function() {
       sound2: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
       sound3: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),
       sound4: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"),
-      winSound: new Audio("https://crossorigin.me/http://www.mmkepler.com/other/321918__bboyjoe-15__you-win.mp3"),
-      loseSound: new Audio("https://crossorigin.me/http://www.mmkepler.com/other/234257__makkuzu__gameover.mp3"),
-      wrongMove: new Audio("https://crossorigin.me/http://www.mmkepler.com/other/Electronic_Chime-KevanGC-495939803.mp3")
+      winSound: new Audio("../audio/you_win.mp3"),
+      loseSound: new Audio("../audio/game_over.mp3"),
+      wrongMove: new Audio("../audio/error.wav")
     },
     func: {
       arrayCreate: function() {
-        var count = 4;
+        var count = 20;
         while (count > 0) {
           var num = Math.floor((Math.random() * 4) + 1);
           game.gameMoves.push(num);
