@@ -26,6 +26,7 @@ $(document).ready(function() {
       winSound: new Audio("../audio/you_win.mp3"),
       loseSound: new Audio("../audio/game_over.mp3"),
       wrongMove: new Audio("../audio/error.wav")
+      wrongMove: new Audio("../audio/error.ogg")
     },
     func: {
       arrayCreate: function() {
