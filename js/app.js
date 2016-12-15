@@ -23,15 +23,13 @@ $(document).ready(function() {
       sound2: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
       sound3: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),
       sound4: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"),
-      winSound: new Audio("https://raw.githubusercontent.com/Missarachnid/fcc-simon/gh-pages/audio/error.wav"),
-      loseSound: new Audio("https://raw.githubusercontent.com/Missarachnid/fcc-simon/gh-pages/audio/game_over.mp3
-"),
-      wrongMove: new Audio("https://raw.githubusercontent.com/Missarachnid/fcc-simon/gh-pages/audio/error.wav
-")
+      winSound: new Audio("https://raw.githubusercontent.com/Missarachnid/fcc-simon/gh-pages/audio/you_win.mp3"),
+      loseSound: new Audio("https://raw.githubusercontent.com/Missarachnid/fcc-simon/gh-pages/audio/game_over.mp3"),
+      wrongMove: new Audio("https://raw.githubusercontent.com/Missarachnid/fcc-simon/gh-pages/audio/error.wav")
     },
     func: {
       arrayCreate: function() {
-        var count = 20;
+        var count = 4;
         while (count > 0) {
           var num = Math.floor((Math.random() * 4) + 1);
           game.gameMoves.push(num);
@@ -93,7 +91,6 @@ $(document).ready(function() {
           if (game.level === game.gameMoves.length && game.moveCount === game.gameMoves.length) {
             game.func.winGame();
           } else if (game.moveCount === game.gameSequence.length && game.level < game.gameMoves.length) {
-            console.log("for next turn " + Boolean(game.playerTurn));
             game.func.nextTurn();
           }
        } else if (parseInt(item) !== parseInt(game.gameSequence[game.moveCount])) {
@@ -150,7 +147,6 @@ $(document).ready(function() {
       animator: function() {
         setTimeout(function() {
           game.gameSequence = game.gameMoves.slice(0, game.level);
-          console.log(game.gameSequence);
           for (var i = 0; i <= game.gameSequence.length - 1; i++) {
             game.func.myDelay(i);
             if (i === game.gameSequence.length - 1) {

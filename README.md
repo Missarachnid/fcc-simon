@@ -14,3 +14,5 @@ This is my entry for Free Code Camp Simon project. It is not finished yet...
 ###Acknowledgements
 +  Free Code Camp
 +  Milton Bradley
+
+###Project can be seen here: https://missarachnid.github.io/fcc-simon/
