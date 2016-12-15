@@ -23,9 +23,11 @@ $(document).ready(function() {
       sound2: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
       sound3: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),
       sound4: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"),
-      winSound: new Audio("../audio/you_win.mp3"),
-      loseSound: new Audio("../audio/game_over.mp3"),
-      wrongMove: new Audio("../audio/error.wav")
+      winSound: new Audio("https://raw.githubusercontent.com/Missarachnid/fcc-simon/gh-pages/audio/error.wav"),
+      loseSound: new Audio("https://raw.githubusercontent.com/Missarachnid/fcc-simon/gh-pages/audio/game_over.mp3
+"),
+      wrongMove: new Audio("https://raw.githubusercontent.com/Missarachnid/fcc-simon/gh-pages/audio/error.wav
+")
     },
     func: {
       arrayCreate: function() {
