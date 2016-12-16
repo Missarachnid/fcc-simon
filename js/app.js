@@ -19,13 +19,20 @@ $(document).ready(function() {
     level: 1,
     moveCount: 0,
     sounds: {
-      sound1: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"),
+      /*sound1: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"),
       sound2: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
       sound3: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),
       sound4: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"),
       winSound: new Audio("https://raw.githubusercontent.com/Missarachnid/fcc-simon/gh-pages/audio/you_win.mp3"),
       loseSound: new Audio("https://raw.githubusercontent.com/Missarachnid/fcc-simon/gh-pages/audio/game_over.mp3"),
-      wrongMove: new Audio("https://raw.githubusercontent.com/Missarachnid/fcc-simon/gh-pages/audio/error.wav")
+      wrongMove: new Audio("https://raw.githubusercontent.com/Missarachnid/fcc-simon/gh-pages/audio/error.wav")*/
+      sound1: $("#sound1")[0],
+      sound2: $("#sound2")[0],
+      sound3: $("#sound3")[0],
+      sound4: $("#sound4")[0],
+      winSound: $("#winSound")[0],
+      loseSound: $("#loseSound")[0],
+      wrongMove: $("#wrongMove")[0]
     },
     func: {
       arrayCreate: function() {
