@@ -8,6 +8,8 @@ User Story: I can play in strict mode where if I get a button press wrong, it no
 User Story: I can win the game by getting a series of 20 steps correct. I am notified of my victory, then the game starts over.*/
 $(document).ready(function() {
 
+  "use strict";
+  
   var game = {
     //variables
     score: $("#score"),
