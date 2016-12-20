@@ -14,5 +14,6 @@ This is my entry for Free Code Camp Simon project. It is not finished yet...
 ###Acknowledgements
 +  Free Code Camp
 +  Milton Bradley
++  W3schools.com for showing me how to make an on off switch
 
 ###Project can be seen here: https://missarachnid.github.io/fcc-simon/
