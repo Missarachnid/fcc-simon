@@ -157,7 +157,11 @@ $(document).ready(function() {
         setTimeout(function() {
           game.gameSequence = game.gameMoves.slice(0, game.level);
           for (var i = 0; i <= game.gameSequence.length - 1; i++) {
-            game.func.myDelay(i);
+            if(game.powerOn === true){
+              game.func.myDelay(i);
+            }else{
+              return false;
+            }
             if (i === game.gameSequence.length - 1) {
               game.playerTurn = true;
               game.func.enableColors();
