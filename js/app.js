@@ -38,7 +38,7 @@ $(document).ready(function() {
     },
     func: {
       arrayCreate: function() {
-        var count = 4;
+        var count = 20;
         while (count > 0) {
           var num = Math.floor((Math.random() * 4) + 1);
           game.gameMoves.push(num);
