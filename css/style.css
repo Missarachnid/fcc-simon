@@ -53,11 +53,13 @@ body {
 #yellow, #blue {
   position: relative;
   z-index: 20;
+  -webkit-transform: translate3d(0,0,0);
 }
 
 #green, #red {
   position: relative;
   z-index: 20;
+  -webkit-transform: translate3d(0,0,0);
 }
 
 #lightGreen, #lightRed, #lightYellow, #lightBlue {
@@ -69,6 +71,7 @@ body {
 
 .btn[disabled] {
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .dis:focus, .dis:active, .dis:focus:active, .btn:focus, .btn:active, .btn:focus:active {
