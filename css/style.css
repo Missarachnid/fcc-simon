@@ -78,10 +78,6 @@ body {
   box-shadow: none;
 }
 
-input:disabled {
-  opacity: 1;
-}
-
 #allCenterItems {
   position: absolute;
   z-index: 1000;
