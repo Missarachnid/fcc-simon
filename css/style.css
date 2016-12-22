@@ -53,20 +53,22 @@ body {
 #yellow, #blue {
   position: relative;
   z-index: 20;
-  -webkit-transform: translate3d(0,0,1px);
-  transform: translate3d(0,0,1px);
+  -webkit-transform: translateZ(1px);
+  transform: translateZ(1px);;
 }
 
 #green, #red {
   position: relative;
   z-index: 20;
-  -webkit-transform: translate3d(0,0,1px);
-  transform: translate3d(0,0,1px);
+  -webkit-transform: translateZ(1px);
+  transform: translateZ(1px);
 }
 
 #lightGreen, #lightRed, #lightYellow, #lightBlue {
   position: relative;
   z-index: -2;
+  -webkit-transform: translateZ(-1px);
+  transform: translateZ(-1px);
   top: -315px;
 }
 
@@ -229,5 +231,8 @@ input:checked + .slider:before {
   -o-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
-    
+}
+
+@media (max-width: 767px){
+  
 }
