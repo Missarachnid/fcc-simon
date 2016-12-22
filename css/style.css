@@ -53,22 +53,16 @@ body {
 #yellow, #blue {
   position: relative;
   z-index: 20;
-  -webkit-transform: translateZ(2px);
-  transform: translateZ(2px);
 }
 
 #green, #red {
   position: relative;
   z-index: 20;
-  -webkit-transform: translateZ(2px);
-  transform: translateZ(2px);
 }
 
 #lightGreen, #lightRed, #lightYellow, #lightBlue {
   position: relative;
-  z-index: -2;
-  -webkit-transform: translateZ(-1px);
-  transform: translateZ(-1px);
+  z-index: 2;
   top: -315px;
 }
 
@@ -119,9 +113,7 @@ div {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  z-index: -100;
-  -webkit-transform: translateZ(-2px);
-  transform: translateZ(-2px);
+  z-index: 1;
 }
 
 
