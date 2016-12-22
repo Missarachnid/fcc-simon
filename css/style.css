@@ -53,13 +53,15 @@ body {
 #yellow, #blue {
   position: relative;
   z-index: 20;
-  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,1px);
+  transform: translate3d(0,0,1px);
 }
 
 #green, #red {
   position: relative;
   z-index: 20;
-  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,1px);
+  transform: translate3d(0,0,1px);
 }
 
 #lightGreen, #lightRed, #lightYellow, #lightBlue {
