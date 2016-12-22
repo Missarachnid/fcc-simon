@@ -53,15 +53,15 @@ body {
 #yellow, #blue {
   position: relative;
   z-index: 20;
-  -webkit-transform: translateZ(1px);
-  transform: translateZ(1px);;
+  -webkit-transform: translateZ(2px);
+  transform: translateZ(2px);
 }
 
 #green, #red {
   position: relative;
   z-index: 20;
-  -webkit-transform: translateZ(1px);
-  transform: translateZ(1px);
+  -webkit-transform: translateZ(2px);
+  transform: translateZ(2px);
 }
 
 #lightGreen, #lightRed, #lightYellow, #lightBlue {
@@ -118,8 +118,10 @@ div {
   background-image: url("../img/back2.png");
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 1;
   position: relative;
+  z-index: -100;
+  -webkit-transform: translateZ(-2px);
+  transform: translateZ(-2px);
 }
 
 
@@ -231,8 +233,4 @@ input:checked + .slider:before {
   -o-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
-}
-
-@media (max-width: 767px){
-  
 }
