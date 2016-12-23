@@ -80,10 +80,20 @@ $(document).ready(function() {
       gameOver: function() {
         game.sounds.loseSound.play();
         game.score.html(game.screenStart);
+        setTimeout(function(){
+          game.func.reset();
+          game.score.html(game.level);
+          game.func.animator();
+        }, 4000);
       },
       winGame: function() {
         game.sounds.winSound.play();
         game.score.html(game.screenStart);
+         setTimeout(function(){
+          game.func.reset();
+          game.score.html(game.level);
+          game.func.animator();
+        }, 4000);
       },
       reset: function() {
         game.level = 1;
@@ -235,10 +245,3 @@ $(document).ready(function() {
   };
 
 });
-
-//make disable line up with animation time
-//add timeout for player turn so turns won't take so long.
-//problems with audio from dropbox - find solution
-
-//from current state, buttons are disabled at start, but not during animation.
-//the function to disable them was moved inside. When start button is pushed
