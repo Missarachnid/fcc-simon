@@ -230,3 +230,24 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
+
+.footer{
+  margin-top: 20px;
+  height: 30px;
+}
+
+.links {
+  font-size: 14px;
+  background-color: none;
+  color: white;
+  border: 3px ridge lightgray;
+  padding: 5px 10px;
+  display: inline-block;
+  margin: 20px 5px 0 5px;
+}
+
+.links:active, .links:hover, .links:focus {
+  text-decoration: none;
+  text-shadow: none;
+  color: white;
+}
