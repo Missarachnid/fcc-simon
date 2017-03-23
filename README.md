@@ -1,5 +1,5 @@
 #Simon
-This is my entry for Free Code Camp Simon project. It is not finished yet...
+This is my entry for Free Code Camp Simon project.
 
 ###Built With
 +  HTML  
