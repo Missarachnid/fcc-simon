@@ -46,36 +46,52 @@ $(document).ready(function() {
         }
       },
       yellow: function() {
-        game.sounds.sound1.play();
-        $("#yellow").animate({
-          opacity: "0.1"
-        }, 100).animate({
-          opacity: "1"
-        }, 1000);
+        if(game.powerOn === true){
+          game.sounds.sound1.play();
+          $("#yellow").animate({
+            opacity: "0.1"
+          }, 100).animate({
+            opacity: "1"
+          }, 1000);
+        }else{
+          return false;
+        }
       },
       green: function() {
-        game.sounds.sound2.play();
-        $("#green").animate({
-          opacity: "0.1"
-        }, 100).animate({
-          opacity: "1"
-        }, 1000);
+        if(game.powerOn === true){
+          game.sounds.sound2.play();
+          $("#green").animate({
+            opacity: "0.1"
+          }, 100).animate({
+            opacity: "1"
+          }, 1000);
+        }else{
+          return false;
+        }
       },
       red: function() {
-        game.sounds.sound3.play();
-        $("#red").animate({
-          opacity: "0.1"
-        }, 100).animate({
-          opacity: "1"
-        }, 1000);
+        if(game.powerOn === true){
+          game.sounds.sound3.play();
+          $("#red").animate({
+            opacity: "0.1"
+          }, 100).animate({
+            opacity: "1"
+          }, 1000);
+        }else{
+         return false;
+        }
       },
       blue: function() {
-        game.sounds.sound4.play();
-        $("#blue").animate({
-          opacity: "0.1"
-        }, 100).animate({
-          opacity: "1"
-        }, 1000);
+        if(game.powerOn === true){
+          game.sounds.sound4.play();
+          $("#blue").animate({
+            opacity: "0.1"
+          }, 100).animate({
+            opacity: "1"
+          }, 1000);
+        }else{
+          return false;
+        }
       },
       gameOver: function() {
         game.sounds.loseSound.play();
@@ -134,50 +150,54 @@ $(document).ready(function() {
         game.func.disableColors();
         setTimeout(game.func.animator, 1500);
       },
-
       myDelay: function(n) {
         var temp = game.gameSequence[n];
         var speed;
+          if(game.powerOn !== false){
+          if (game.level < 5) {
+            speed = 1300;
+          } else if (game.level >= 5 && game.level < 9) {
+            speed = 1100;
+          } else if (game.level >= 9 && game.level < 13) {
+            speed = 900;
+          } else {
+            speed = 750;
+          }
 
-        if (game.level < 5) {
-          speed = 1300;
-        } else if (game.level >= 5 && game.level < 9) {
-          speed = 1100;
-        } else if (game.level >= 9 && game.level < 13) {
-          speed = 900;
-        } else {
-          speed = 750;
-        }
-        switch (temp) {
-          case 1:
-            window.setTimeout(game.func.yellow, speed * n);
-            break;
-          case 2:
-            window.setTimeout(game.func.green, speed * n);
-            break;
-          case 3:
-            window.setTimeout(game.func.red, speed * n);
-            break;
-          case 4:
-            window.setTimeout(game.func.blue, speed * n);
-            break;
+            switch (temp) {
+              case 1:
+                window.setTimeout(game.func.yellow, speed * n);
+                break;
+              case 2:
+                window.setTimeout(game.func.green, speed * n);
+                break;
+              case 3:
+                window.setTimeout(game.func.red, speed * n);
+                break;
+              case 4:
+                window.setTimeout(game.func.blue, speed * n);
+                break;
+            }
+          
+        }else{
+          return false;
         }
       },
       animator: function() {
         setTimeout(function() {
           game.gameSequence = game.gameMoves.slice(0, game.level);
-          for (var i = 0; i <= game.gameSequence.length - 1; i++) {
-            if(game.powerOn === true){
-              game.func.myDelay(i);
-            }else{
-              return false;
-            }
-            if (i === game.gameSequence.length - 1) {
-              game.playerTurn = true;
-              game.func.enableColors();
-            }else{
-              game.func.disableColors();
-            }
+            for (var i = 0; i <= game.gameSequence.length - 1; i++) {
+              if(game.powerOn === true){
+                game.func.myDelay(i);
+              }else{
+                return false;
+              }
+              if (i === game.gameSequence.length - 1) {
+                game.playerTurn = true;
+                game.func.enableColors();
+              }else{
+                game.func.disableColors();
+              }
           }
         }, 1500);
       },
@@ -243,5 +263,4 @@ $(document).ready(function() {
       })
     }
   };
-
 });
